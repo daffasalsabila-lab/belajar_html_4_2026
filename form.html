@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(188, 200, 228);
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 40px;
+        }
+
+        .container {
+            box-shadow: 0 4px 10px rgb(0, 0, 0, 0.5);
+            padding: 30px 60px;
+            background-color: rgb(235, 224, 224);
+            border-radius: 8px;
+            margin: 0 25% 0 25%;
+            max-width: 500px;
+            margin: 0 auto; 
+        }
+
+        h1 {
+            font-size: 30px;
+            color:#333
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-group>label {
+            font-weight: bold;
+            color:#444
+        }
+        input[type="text"], 
+        input[type="file"]
+        select, textarea {
+            width: 100%;
+            padding: 10px; 
+            border-radius: 5px;
+            border: 1px solid#ccc;
+            box-sizing: border-box;
+        }
+        button[type="submit"]{
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: 0.2px solid wheat;
+            cursor: pointer; 
+        }
+        
+        button[type="reset"]{
+            background-color: rgb(51, 51, 116);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: 0.2px solid wheat;
+            cursor: pointer; 
+        }
+        button[type="sumbit"]:hover {
+            background-color:rgb(84, 75, 111)
+        }
+
+        button[type="reset"]:hover {
+            background-color:rgb(84, 75, 111)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+            <h1>Isi Form Pendaftaran Mahasiswa</h1>
+        <p>Tolong isi pendaftaran berikut: </p>
+        <hr>
+        <form action="" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="">Name :</label>
+            <input type="text" id="name"
+            placeholder="Enter Your Name"
+            name="name"> 
+        </div>
+
+        <div class="form-group">
+            <lable for="">No Tel./Hp</lable>
+            <input type="text" name="hp" placeholder="08xxxxxxxxx">
+        </div>
+
+        <div class="form-group">
+        <label for="">Hoby (Boleh pilih banyak) :</label> <br>
+        <input type="checkbox" 
+        name= "hoby[]"> Memasak <br>
+            <input type="checkbox" 
+        name= "hoby[]"> Berenang <br>
+            <input type="checkbox" 
+        name= "hoby[]"> Mancing <br>
+            <input type="checkbox" 
+        name= "hoby[]"> Futsal <br>
+        </div>
+
+        <div class="form-group">
+        <label for="">Jenis Kelamin :</label> <br>
+        <input type="radio" name="jenisKelamin" checked>Laki-laki <br>
+        <input type="radio" name="jenisKelamin"> Perempuan <br>
+        </div>
+
+        <div class="form-group">
+        <label for="">Pilih Jurusan :</label>
+        <select name="" id="">
+            <option value="">-Choose Major-</option>
+            <option value="">Informatika</option>
+            <option value="">Sistem Informasi</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+            <label for="">Foto :</label> <br>
+            <input type="file" name="foto">
+        </div>
+        <div class="form-group">
+        <label for="">Alamat :</label>
+        <textarea name="alamat" cols="30" rows="5" placeholder="Jl.xxxxxxxxxxxxx"></textarea>
+        </div>
+
+        <div class="button-group">
+        <button type="submit">Kirim</button>
+                <button type="reset">Reset</button>
+        </div>
+
+        
+    </form>
+    </div>
+
+</body>
+</html>
