@@ -1,51 +1,195 @@
 body,
 html {
-    margin: 0;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
+
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  height: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 header {
-    background-color: rgba(5, 14, 36, 0.87);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 10px; 
-    position: fixed;
-    color: #ffffff; 
-    top: 0;
+  background-color: rgba(91, 135, 218, 0.7);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  position: fixed;
+  color: #ffffff;
+  top: 0;
 }
 
 nav > a {
-    margin-right: 25px;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    margin-left: 10px;
+  margin-right: 25px;
+  text-decoration: none;
+  color: #fcfcfc;
+  font-weight: bold;
+  margin-left: 10px;
 }
 
 nav > a:hover {
-    color: rgb(137, 137, 254)
+  color: rgb(62, 62, 119);
 }
 .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: 20px;
 }
 
 .bg-1 {
-    background-image: url("https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url("https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+.bg-2 {
+  background-image: url("https://images.unsplash.com/photo-1575318634026-38fb9e8157d7?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
-.parrallax {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    background-repeart: no-repeart;
-    background-position: center;
-    
+.parallax {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
+.content {
+  margin: 75px auto;
+  background-color: rgba(31, 61, 116, 0.7);
+  padding: 40px;
+  border-radius: 8px;
+  width: 65%;
+  height: auto;
+  color: rgb #78782f55;
+}
+
+.content > img {
+  width: 200px;
+  height: auto;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.container {
+  margin-top: 20px;
+  padding: 100px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(31, 61, 116, 0.7);
+}
+
+.ability {
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  pading: 10px;
+  width: 225px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.wraper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  /*  */
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  border-radius: 8px;
+}
+
+.normal-section > {
+    height: 450px;
+    margin-top: 600px;
+    padding-top: 70px;
+}
+
+ul {
+  padding: 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+figure {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  padding: 10px 10px auto 10px;
+  border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+figure > img {
+  width: 200px;
+  height: 150px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+figure > img:hover {
+  transform: scale(1.2);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5 px;
+}
+
+.contact-form > input[type="text"],
+input[type="email"]
+{
+        height: 30px;
+        border-radius: 5 px;
+        }
+button[type="submit"] {
+    background-color: rgb(62, 119, 64);
+    color: #fff;
+    padding: 5px 0px 5px 0px;
+    border: none;
+    font-size: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(229, 208, 47);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 780px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  figure > img {
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.5s;
+  }
+
+  /* figure > img {
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+  } */
+
+.content {
+    height: 75%;
+}
+figure {
+    padding: 10px;
+    font-size: 10px;
+}
+figure > img {
+    height: 120px;
+    width: auto;
+}
+
