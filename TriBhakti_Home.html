@@ -1,0 +1,91 @@
+ <!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Belajar Tailwind</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+  </head>
+
+  <body class="bg-gray-50 text-gray-800">
+    <!-- semantic html : header, nav, section, footer -->
+    <nav class="w-full fixed bg-white left-0 top-0 shadow-sm border-b border-gray-100 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-decoratian-none text-2xl font-extrabold tracking-tight">
+                <img src="Logo-Tri-Bhakti-Business-School.png" alt="Logo" class="h-12 w-full object-contain">
+            </a>
+            <ul class="hidden md:flex space-x-8 font-semibold text-gray-600">
+                <li><i class="bi bi-list"></i><a class="hover:text-blue-600 transition pl-3" href="#home">Menu</a></li>
+                <li><i class="bi bi-mortarboard-fill"></i><a class="hover:text-blue-600 transition pl-3" href="#program">Program Studi</a></li>
+                <li><i class="bi bi-buildings"></i><a class="hover:text-blue-600 transition pl-3" href="#tentang">Tentang Kami</a></li>
+                <li><i class="bi bi-file-earmark-text-fill"></i><a class="hover:text-blue-600 transition pl-3" href="#pmb">PMB</a></li>
+                <li><a href="#info-pendaftaran" class="border-2 px-5 py-2 transition rounded-[10px] hover:text-white hover:bg-[oklch(44.4%_0.177_26.899)]" style="color: oklch(44.4% 0.177 26.899); border-color: oklch(44.4% 0.177 26.899);">Info Pendaftaran Terbaru</a></li>
+            </ul>
+        </div>
+
+<section id="menu" class="max-w-7xl mx-auto px-6 py-24 scroll-mt-16">
+    <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="w-full md:w-1/2">
+            <h2 class="text-4xl font-bold inline-block pb-2 mb-6">lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+            <p class="lead-relaxed text-lg text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias possimus error sapiente in aliquid quibusdam nostrum atque vel aspernatur accusamus. Voluptas impedit ad nisi soluta magnam optio harum repudiandae iure?</p>
+        </div>
+        <div class="w-full md:w-1/2 flex justify-center">
+            <img src="Ubur-Ubur-Ikan-Lele.jpg" alt="Foto Daffa" 
+            class="w-auto h-auto object-cover shadow-2xl rotate-3">
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT OUR CAMPUS -->
+<section id="program" class="bg-[#800] -rotate-3 py-20 mt-10 scroll-mt-16">
+    
+    <!-- Isi dikembalikan lurus -->
+    <div class="max-w-7xl mx-auto px-6 rotate-3">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <!-- VIDEO DI KIRI -->
+            <div class="w-full md:w-1/2">
+                <div class="aspect-video overflow-hidden rounded-2xl shadow-2xl">
+                    <iframe 
+                        class="w-full h-full"
+                        src="https://www.youtube.com/embed/qUSWFPH_t64?si=Dk9PH6JFD07F-_M0"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <!-- TEXT DI KANAN -->
+            <div class="w-full md:w-1/2 text-white">
+                <h2 class="text-4xl font-bold mb-6">
+                    ABOUT OUR CAMPUS
+                </h2>
+                <p class="text-lg leading-relaxed mb-8">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Molestias possimus error sapiente in aliquid quibusdam
+                    nostrum atque vel aspernatur accusamus. Voluptas impedit
+                    ad nisi soluta magnam optio harum repudiandae iure?
+                </p>
+                <!-- TOMBOL -->
+                <a 
+                    href="#"
+                    class="inline-block bg-[#400] text-white font-semibold px-7 py-3 rounded-full hover:bg-yellow-600 transition">
+                    LEARN MORE
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    ba
+</section>
+
+
+    </nav>
